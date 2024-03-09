@@ -3,13 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- тег який дозволяє записувати стилі -->
+    <style>
+      p {
+        /* висота */
+        height: 1000px;
+        /* задній фон */
+        background-color: tomato;
+        /* розмір тексту */
+        font-size: 20px;
+        /* дозволяє змінювати колір тексту */
+        color: green;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
     <!-- ul - список з крапочками на початку -->
-    <ul>
-      <!-- Елемент списку -->
-      <li>огірок</li>
+    <!-- <ul> -->
+    <!-- Елемент списку -->
+    <!-- <li>огірок</li>
       <li>томат</li>
     </ul>
 
@@ -38,6 +51,59 @@
         </p>
         <a href="">Посилання</a>
       </li>
+    </ol> -->
+    <!-- Блокові елементи - це елементи які займають весь рядок не залежно від контенту який ви записали -->
+    <!-- Блокові елменти дозволяють сформувати структуру нашої сторінки -->
+    <h1>Блокові теги</h1>
+    <ul>
+      <li>огірок</li>
+      <li>зелень</li>
+      <li>шо небудь</li>
+      <li>огірок</li>
+    </ul>
+    <ol>
+      <li>капуста</li>
     </ol>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, id!</p>
+
+    <h2>Рядкові теги</h2>
+    <!-- width - не обовʼязков налаштування, яке позначає ширину елементу -->
+    <!-- height - не обовʼязков налаштування, яке позначає висоту елементу -->
+    <img src="./ptah.jpg" alt="" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <img src="./ptah.jpg" alt="" width="250" height="250" />
+    <a href="">asdasd</a>
+    <a href=""><b>asdasd</b></a>
+    <a href="">asdasd</a>
+    <a href="">asdasd</a>
+    <!-- групуючий тег = тег обгортка -->
+    <section class="">
+      <h2>Секція про моїх крутих пташок</h2>
+      <ul>
+        <li>
+          <img src="./ptah.jpg" alt="" width="250" height="250" />
+          <img src="./ptah.jpg" alt="" width="250" height="250" />
+          <img src="./ptah.jpg" alt="" width="250" height="250" />
+        </li>
+      </ul>
+    </section>
+    <section class="Секція про моїх нових пташок">
+      <h2>Секція про моїх нових пташок</h2>
+      <ul>
+        <li>
+          <img src="./ptah.jpg" alt="" width="250" height="250" />
+          <img src="./ptah.jpg" alt="" width="250" height="250" />
+        </li>
+      </ul>
+    </section>
+    <!-- Основна відмінність   блочних тегів від рядкових у тому,що блочні займають всю сторінку не залежно від контенту. 
+      Строчні елементи займають ширину по контенту  -->
+    &#169;
   </body>
 </html>
