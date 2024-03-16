@@ -3,195 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- тег який дозволяє записувати стилі -->
-    <style>
-      p {
-        /* висота */
-        height: 1000px;
-        /* задній фон */
-        background-color: tomato;
-        /* розмір тексту */
-        font-size: 20px;
-        /* дозволяє змінювати колір тексту */
-        color: green;
-      }
-    </style>
     <title>Document</title>
   </head>
   <body>
-    <!-- ul - список з крапочками на початку -->
-    <!-- <ul> -->
-    <!-- Елемент списку -->
-    <!-- <li>огірок</li>
-      <li>томат</li>
-    </ul>
+    <!-- div - коробка -->
+    <div>
+      <div class="logo"><a href=""></a></div>
+      <div class="nav">
+        <div>
+          <div>Головна</div>
+        </div>
+      </div>
+      <div class="res"></div>
+    </div>
+    <!-- ШАПКА -->
+    <!-- всі теги читаються браузером і чим приємніше йому чітати ваш код тим вище він буде серед пошукових запитів -->
+    <header>
+      <a class="logo" href="">WebStudio</a>
+      <nav>
+        <ul>
+          <li>Головна</li>
+          <li>ще якась сторінка</li>
+          <li>Контакти</li>
+        </ul>
+      </nav>
+    </header>
 
-    <ol>
-      <li>
-        <p>1</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, doloribus.
-        </p>
-        <a href="">Посилання</a>
-      </li>
-      <li>
-        <p>2</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, doloribus.
-        </p>
-        <a href="">Посилання</a>
-      </li>
-      <li>
-        <p>3</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, doloribus.
-        </p>
-        <a href="">Посилання</a>
-      </li>
-    </ol> -->
-    <!-- Блокові елементи - це елементи які займають весь рядок не залежно від контенту який ви записали -->
-    <!-- Блокові елменти дозволяють сформувати структуру нашої сторінки -->
-    <h1>Блокові теги</h1>
-    <ul>
-      <li>огірок</li>
-      <li>зелень</li>
-      <li>шо небудь</li>
-      <li>огірок</li>
-    </ul>
-    <ol>
-      <li>капуста</li>
-    </ol>
+    <!-- inline -->
+    <!-- семантика - це підхід при якому ми змістовно використовуємо теги (не DIV DIV DIV) -->
+    <!-- додати параграф тексту поле для вводу  -->
+    <div>
+      <input type="text" />
+    </div>
+    <input type="text" />
+    <input type="text" />
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, id!</p>
-
+    <!-- 1 -->
     <h2>Рядкові теги</h2>
-    <!-- width - не обовʼязков налаштування, яке позначає ширину елементу -->
-    <!-- height - не обовʼязков налаштування, яке позначає висоту елементу -->
-    <img src="./ptah.jpg" alt="" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <img src="./ptah.jpg" alt="" width="250" height="250" />
-    <a href="">asdasd</a>
-    <a href=""><b>asdasd</b></a>
-    <a href="">asdasd</a>
-    <a href="">asdasd</a>
-    <!-- групуючий тег = тег обгортка -->
-    <section class="">
-      <h2>Секція про моїх крутих пташок</h2>
-      <ul>
-        <li>
-          <img src="./ptah.jpg" alt="" width="250" height="250" />
-          <img src="./ptah.jpg" alt="" width="250" height="250" />
-          <img src="./ptah.jpg" alt="" width="250" height="250" />
-        </li>
-      </ul>
-    </section>
-    <section class="Секція про моїх нових пташок">
-      <h2>Секція про моїх нових пташок</h2>
-      <ul>
-        <li>
-          <img src="./ptah.jpg" alt="" width="250" height="250" />
-          <img src="./ptah.jpg" alt="" width="250" height="250" />
-        </li>
-      </ul>
-    </section>
-    <!-- Основна відмінність   блочних тегів від рядкових у тому,що блочні займають всю сторінку не залежно від контенту. 
-      Строчні елементи займають ширину по контенту  -->
-    <!-- &#169; -->
+    <ul>
+      <li>b</li>
+      <li>img</li>
+      <li>a</li>
+      <li>button</li>
+    </ul>
+    <h2>блочні теги</h2>
+    <ul>
+      <li>h1...h6</li>
+      <li>p</li>
+      <li>li</li>
+      <li>audio</li>
+    </ul>
 
-    <!------------------------- НЕДІЛЯ -------------------->
-
-    <!-- Рамка таблиці(контейнер)- Кажемо браузеру,що ми створюємо таблицю -->
+    <!-- 2 -->
 
     <table>
-      <!-- Заголовок таблиці -->
-      <caption>
-        Розклад потягів
-      </caption>
-      <!-- Шапка тиблиці -->
+      <!-- шапка таблиці -->
       <thead>
-        <!--th - table heading Нова комірка для шапки -->
-        <th>Train number</th>
-        <th>Route</th>
-        <th>Travel time</th>
+        <!-- рядок табилиці -->
+        <tr>
+          <td>Понеділок</td>
+          <td>Вівторок</td>
+          <td>Середа</td>
+          <td>Четвер</td>
+          <td>Пʼятниця</td>
+        </tr>
       </thead>
-      <!-- tbody - tablebody - тег який вміщує основний контент нашої таблички -->
+
+      <!-- тіло таблиці -->
       <tbody>
-        <!--tr - table row -  рядок в який ми можемо вписати певну кількость комірок -->
+        <!-- рядок перших уроків -->
         <tr>
-          <!-- td - комірка для інформації  -->
-          <td>433</td>
-          <td>as-df</td>
-          <td>5</td>
+          <td>Математика</td>
+          <td>Література</td>
+          <td>Математика</td>
+          <td>Література</td>
+          <td>Математика</td>
+        </tr>
+        <!-- рядок других уроків -->
+        <tr>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+          <td></td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
         </tr>
         <tr>
-          <td>701</td>
-          <td>gh-jk</td>
-          <td>7</td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+          <td></td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
         </tr>
         <tr>
-          <td>258</td>
-          <td>qw-er</td>
-          <td>4</td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+          <td></td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+        </tr>
+        <tr>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+          <td></td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+        </tr>
+        <tr>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
+          <td></td>
+          <td>Фіз-ра</td>
+          <td>Фіз-ра</td>
         </tr>
       </tbody>
     </table>
-    <!-- style - дозволяє додати стилі до елементу -->
-    <!-- border - звертання до кордонів елементу -->
-    <!-- ширина кордону 1px це має бути суцільна лінія колір червоний (1px solid red)-->
-
-    <table style="border: 1px double red">
-      <thead style="border: 1px dashed red">
-        <!-- рядок -->
-        <tr style="border: 1px solid red">
-          <!-- row - рядок -->
-          <!-- rowspan - скільки рядків займати -->
-          <th style="border: 1px solid red" rowspan="2">Хмарний сервіс</th>
-          <!-- col - column - колонка -->
-          <!--colspan - скільки займає колонок  -->
-          <th style="border: 1px solid red" colspan="3">Статистика</th>
-        </tr>
-        <tr style="border: 1px solid red">
-          <th style="border: 1px solid red">Користувачі</th>
-          <th style="border: 1px solid red">Кількість користувачів</th>
-          <th style="border: 1px solid red">Загальна місткість</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-
-    <!-- --------------------ФОРМИ-------------------- -->
-    <!-- Каже браузеру про створення форми (є контейнером для текстових полів)  -->
-    <form>
-      <!-- input - текстове поле в яке ми можемо ввести інформацію яку від нас попросять -->
-      <!-- type="email" - додає превірку на емейл(на собачку в тексті) -->
-      <!-- label - пояснення для чого це поле -->
-      <label for="email">Емейл</label>
-      <!--autocomplete - забороняє підказки  -->
-      <input id="email" type="email" autocomplete="off" />
-      <!-- password - приховує текст -->
-      <label>
-        Password
-        <input type="password" />
-      </label>
-      <input type="number" placeholder="Введи свій вік" min="18" max="60" />
-      <input type="text" />
-      <!-- Велике поле для вводу тексту -->
-      <textarea rows="3" style="resize: none"></textarea>
-      <!-- select - випадаючий список -->
-      <select name="" id="">
-        <!-- option - елемент випадаючого списку -->
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-      </select>
-    </form>
   </body>
 </html>
