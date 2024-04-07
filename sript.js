@@ -1,3 +1,6 @@
+
+
+
 // 1) отримати доступ до елемента
 // # - селектор id
 const link = document.querySelector("#link");

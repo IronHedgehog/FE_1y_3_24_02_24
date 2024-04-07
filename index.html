@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Для чого потрібен тег head? - head - це групуючий тег який дозволяє зібрати усю важливу інформацію яка необхідна для запуску та існування нашого сайту (шрифти, файли з стилями, favicon)-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  <style> - вбудований або критичний css -  має другий приорітет -->
+    <!-- Критичний css - це той css який створений для першого екрану, вантажиться разом з html файлом -->
+    <!-- <style>
+      Селектор (селектор класу = .)
+      CSS - зганяй  в HTML файл до якого ти підключений 
+      знайди там УСІ html теги у яких є атрибут class="a"
+     
+      .a {
+        background-color: black;
+        color: blue;
+      }
+    </style> -->
+
+    <!-- ./ -->
+
+    <!-- link -  тег який дозволяє сказати браузеру, зганяй за посиланням та принеси мені у веб додаток те що там знайдеш -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- script підключається перед закриваючим тего body -->
-    <a id="link" href="">link</a>
-    <button id="button">Змінити колір сторінки</button>
+    <!-- інлайнові стилі -  style - мають найвищій приорітет -->
+    <!-- 1) Ці ситлі мають мають найвищій приорітет  -->
+    <!-- 2) В HTML файлі має бути лише HTML код-->
 
+    <!-- Щоб б не морочитись з селекторами та їх вагою кожному html елементу дайте атрибут class -->
+
+    <h1 class="main-heading">Ефективні рішення для вашого бізнесу</h1>
+    <img class="img" src="" alt="" />
+    <p class="text" id="img">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
+      accusamus delectus nesciunt exercitationem culpa necessitatibus facilis
+      dignissimos dolore itaque porro!
+    </p>
+    <a class="link" href="">asdasd</a>
+
+    <ul class="list">
+      <li>Text</li>
+      <li>Text</li>
+      <li>Text</li>
+    </ul>
+
+    <ul class="list1">
+      <li>Text</li>
+      <li>Text</li>
+      <li>Text</li>
+    </ul>
+
+    <h2 class="top-left">Lorem, ipsum.</h2>
+
+    <button type="submit">кнопка</button>
+
+    <p class="a" style="background-color: aqua; font-size: 50px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Id veniam placeat commodi <br />quos unde ducimus adipisci vero similique
+      <br />
+      maiores doloremque?
+    </p>
+    <p class="a" style="background-color: aqua; font-size: 50px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Id veniam placeat commodi <br />quos unde ducimus adipisci vero similique
+      <br />
+      maiores doloremque?
+    </p>
+    <h2 class="top-left">Lorem, ipsum.</h2>
+    <a class="link" id="link" href="">link</a>
+    <button class="button" id="button">Змінити колір сторінки</button>
     <script type="module" src="./sript.js"></script>
   </body>
 </html>
