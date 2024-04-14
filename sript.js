@@ -1,6 +1,3 @@
-
-
-
 // 1) отримати доступ до елемента
 // # - селектор id
 const link = document.querySelector("#link");
@@ -21,7 +18,7 @@ function getRandomHexColor() {
   return hexColor;
 }
 
-#fcba03
+// #fcba03
 // "При кліці"(cлучхач подій клік)
 
 button.addEventListener("click", onClick);
