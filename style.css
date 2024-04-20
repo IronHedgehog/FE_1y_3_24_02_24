@@ -6,7 +6,7 @@
   background-color: yellow;
   font-size: 45px;
   /* дозволяє перегортати елемент */
-  rotate: 90deg;
+  /* rotate: 90deg; */
 }
 /* active === hover - active працює при затисканні елемента */
 /* .b:active {

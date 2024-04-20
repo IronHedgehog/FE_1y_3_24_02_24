@@ -1,0 +1,51 @@
+/* :hover - наведення */
+/* :active = :hover для мобільних пристроїв */
+
+/* focus - натискання на інтерактивний елемент та робота з ним або через таб можна активувати */
+
+button:focus {
+  /* outline - обводка */
+  /* border - кордони */
+  outline: none;
+  border: none;
+  border: 2px double yellowgreen;
+}
+
+/*:not(:last-child) - не для останньой дитини  */
+.lesson-item:not(:last-child) {
+  /* background-color: - встановлює задній фон */
+  background-color: green;
+}
+/* hover - наведенні */
+
+.lesson-title:hover,
+.lesson-title:active {
+  /* !important - Підключає саме цей стиль(перебʼє всі інші) */
+  /* color: red !important; */
+  font-size: 30px;
+}
+/* Каскадність говорить нам про те що якщо до одного класу ви звертаєтесь двічі будь-звідки то підключається останній який ви записали (той що нижче)*/
+
+.lesson-title:hover {
+  color: white;
+}
+
+/* 
+id = 100 вага
+class - 10 вага
+тег - 1 вага
+псевдокласи(ефекти) - 10 вагу
+*/
+/* всі пвс */
+/* :hover - псевдо(клас) */
+/* ВАГА */
+.lesson-title:hover {
+  color: orange;
+  background-color: aquamarine;
+}
+
+/*  */
+
+.lesson-item {
+  font-size: 24px;
+}
