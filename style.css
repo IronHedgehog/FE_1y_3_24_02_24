@@ -1,43 +1,37 @@
-/* Щоб використати псевдоклас  ми маємо звернутись до html елементу та використовуючи : написати псевдоклас який нас цікавить*/
-/* псевдоклас який відпрацьовує принаведенні */
-.h:hover,
-.h:active {
-  color: blue;
-  background-color: yellow;
-  font-size: 45px;
-  /* дозволяє перегортати елемент */
-  /* rotate: 90deg; */
+/* font-face - опис шрифту */
+@font-face {
+  font-family: "DM Sans";
+  /*font-weight - насиченість кольору  */
+  font-weight: 700;
+
+  src: url(./fonts/DMSans-Italic-VariableFont_opsz\wght.ttf) format("ttf");
 }
-/* active === hover - active працює при затисканні елемента */
-/* .b:active {
-  color: blue;
-  background-color: yellow;
+/* . - cелектор класу  */
+/* class = . */
+/* class="text"(html) = .text(css) */
+.text {
+  /* font-family - сімейство шрифтів для використання */
 
-  width: 500px;
-  height: 500px;
-} */
-
-/* фокус - це коли ми з вами тицяємо на інтерактивний елемент */
-
-button:focus {
-  background-color: black;
+  /*  font-family: "Montserrat", sans-serif; - доєднати сімейство шрифтів Montserrat якщо не вишло то підключити сімейство  sans-serif*/
+  font-family: "Montserrat", sans-serif;
+  /*font-style: - стиль шрифту  */
+  font-style: normal;
+  /* font-size - розмір шрифту */
+  /* font-size: ; */
 }
 
-/* :nth-child() - струткруний псевдоклас який дозволяє звернутись одрузу до декількох дитячих елементів */
-/* (odd) - означає обрати усі непарні дитячі елементи */
-/* .list-item:nth-child(odd) {
-  background-color: blue;
-} */
-/* (even) - означає обрати усі парні дитячі елементи */
-/* .list-item:nth-child(even) {
-  background-color: yellow;
-} */
-/* 
-.list-item:nth-child(5) {
-  background-color: yellow;
-} */
-/* 3n - скільки ви рухаєтесь */
-/* 5 - з якого елменту почать */
-.list-item:nth-child(2n + 3) {
-  background-color: yellow;
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  /*font-weight: може набувати значень від 100 до 900 або буквенних значень  */
+  font-weight: 700;
+  font-size: 14px;
+  /*line-height - висота рядка,відступ між рядками  */
+  line-height: 22px;
+  /*letter-spacing: - відступ між буквами  */
+  letter-spacing: 2px;
+  /*  text-transform:  - трансформувати текст (у всі великі букви(uppercase), усі маленькі букви(lowercase), у кожного слова велика буква(capitalize)) */
+  text-transform: capitalize;
+
+  color: #212121;
 }
