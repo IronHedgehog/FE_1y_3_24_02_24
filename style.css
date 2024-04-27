@@ -34,4 +34,44 @@
   text-transform: capitalize;
 
   color: #212121;
+  /* text-indent: ширина абзацу */
+  text-indent: 3%;
+  /*white-space - дозволяє контролювати переноси тексту: nowrap-забороняє перенос,
+  wrap- перенос дозволяє;
+  break-spaces
+}  */
+  font-style: italic;
+  white-space: pre;
+}
+
+.p {
+  /* Так само консультація з широким активом значною мірою зумовлює. */
+
+  font-family: "Roboto";
+  /* жирність тексту */
+  font-weight: 400;
+  /*  розмір тексту*/
+  font-size: 14px;
+  /* line-height - висота рядка */
+  line-height: 24px;
+  /* відстань між буквами */
+  letter-spacing: 0.03em;
+  /*#757575 - колір HEX формату  */
+  color: #757575;
+  /*  text-align - дозволяє вирівнювати ваш текст по ширині 
+  start center end
+  */
+  text-align: center;
+  /*text-transform - дозволяє вам трансформувати текст  
+  uppercase
+  lowercase
+  capitalize
+  */
+  text-transform: uppercase;
+  /* Так само консультація з широким активом значною мірою зумовлює. */
+}
+
+.a {
+  /* вирівнювання по висоті */
+  vertical-align: bottom;
 }
