@@ -1,77 +1,20 @@
-/* font-face - опис шрифту */
-@font-face {
-  font-family: "DM Sans";
-  /*font-weight - насиченість кольору  */
-  font-weight: 700;
+/* root - корінь */
 
-  src: url(./fonts/DMSans-Italic-VariableFont_opsz\wght.ttf) format("ttf");
-}
-/* . - cелектор класу  */
-/* class = . */
-/* class="text"(html) = .text(css) */
-.text {
-  /* font-family - сімейство шрифтів для використання */
+:root {
+  /* щоб створити змінну ми маємо записати --назву:значення */
 
-  /*  font-family: "Montserrat", sans-serif; - доєднати сімейство шрифтів Montserrat якщо не вишло то підключити сімейство  sans-serif*/
-  font-family: "Montserrat", sans-serif;
-  /*font-style: - стиль шрифту  */
-  font-style: normal;
-  /* font-size - розмір шрифту */
-  /* font-size: ; */
-}
+  --accent-color: #03a9f4;
 
-.text {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  /*font-weight: може набувати значень від 100 до 900 або буквенних значень  */
-  font-weight: 700;
-  font-size: 14px;
-  /*line-height - висота рядка,відступ між рядками  */
-  line-height: 22px;
-  /*letter-spacing: - відступ між буквами  */
-  letter-spacing: 2px;
-  /*  text-transform:  - трансформувати текст (у всі великі букви(uppercase), усі маленькі букви(lowercase), у кожного слова велика буква(capitalize)) */
-  text-transform: capitalize;
-
-  color: #212121;
-  /* text-indent: ширина абзацу */
-  text-indent: 3%;
-  /*white-space - дозволяє контролювати переноси тексту: nowrap-забороняє перенос,
-  wrap- перенос дозволяє;
-  break-spaces
-}  */
-  font-style: italic;
-  white-space: pre;
+  --happy: yellow;
 }
 
 .p {
-  /* Так само консультація з широким активом значною мірою зумовлює. */
-
-  font-family: "Roboto";
-  /* жирність тексту */
-  font-weight: 400;
-  /*  розмір тексту*/
-  font-size: 14px;
-  /* line-height - висота рядка */
-  line-height: 24px;
-  /* відстань між буквами */
-  letter-spacing: 0.03em;
-  /*#757575 - колір HEX формату  */
-  color: #757575;
-  /*  text-align - дозволяє вирівнювати ваш текст по ширині 
-  start center end
-  */
-  text-align: center;
-  /*text-transform - дозволяє вам трансформувати текст  
-  uppercase
-  lowercase
-  capitalize
-  */
-  text-transform: uppercase;
-  /* Так само консультація з широким активом значною мірою зумовлює. */
+  color: var(--accent-color);
 }
 
-.a {
-  /* вирівнювання по висоті */
-  vertical-align: bottom;
+.main-list {
+  /* display: flex; - cтавить елементи в рядок */
+  /* width = ширина */
+  width: 906px;
+  display: flex;
 }
