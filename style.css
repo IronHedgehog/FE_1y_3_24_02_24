@@ -1,20 +1,27 @@
-/* root - корінь */
+/* Селектор складається з 3-х частин це 1) сам селектор який шукає елементи
+2) {} - обгортка для ваших правил які ви будете встановлювати до цих елементів */
+/* 3)Самі правила всередені обгортки  - червоний колір, розмір тексту */
 
 :root {
-  /* щоб створити змінну ми маємо записати --назву:значення */
-
-  --accent-color: #03a9f4;
-
-  --happy: yellow;
+  --accent-color: #09ff00;
+  --button-bg: red;
+  --button-text: grey;
 }
 
-.p {
+a[href^="https"] {
+  color: red;
+}
+
+/* Селектор сусіда = + */
+/* Селектор нещадка = > */
+
+.list + p {
+  font-size: 100px;
+  /* var - variable - змінна */
   color: var(--accent-color);
 }
 
-.main-list {
-  /* display: flex; - cтавить елементи в рядок */
-  /* width = ширина */
-  width: 906px;
-  display: flex;
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
 }
