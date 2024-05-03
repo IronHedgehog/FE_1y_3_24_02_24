@@ -25,3 +25,24 @@ button {
   background-color: var(--button-bg);
   color: var(--button-text);
 }
+
+/* селектор id = # */
+#greycol {
+  color: grey;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.pink {
+  color: pink;
+}
+
+.red {
+  color: red;
+}
