@@ -1,9 +1,17 @@
+/* 626262 B4AD9E 7d7d7d 03a9f4 FFFFFF */
+
+/* змінна - це частина оперативної памʼяті компʼютера яка є зарезервованою під ваші потреби(колір) */
 /* root - корінь */
 
 :root {
   /* щоб створити змінну ми маємо записати --назву:значення */
+  --text-color: #b4ad9e;
+
+  --heading-color: #626262;
 
   --accent-color: #03a9f4;
+
+  --text-fontSize: 30px;
 
   --happy: yellow;
 }
@@ -17,4 +25,9 @@
   /* width = ширина */
   width: 906px;
   display: flex;
+}
+
+.list-p {
+  /* variable - змінна */
+  font-size: var(--text-fontSize);
 }
