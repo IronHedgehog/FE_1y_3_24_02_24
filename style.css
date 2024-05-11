@@ -3,6 +3,14 @@
 /* змінна - це частина оперативної памʼяті компʼютера яка є зарезервованою під ваші потреби(колір) */
 /* root - корінь */
 
+@font-face {
+  font-family: "Bilbo Swash Caps";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/bilbo/BilboSwashCaps-Regular.ttf) format("ttf");
+}
+
 :root {
   /* щоб створити змінну ми маємо записати --назву:значення */
   --text-color: #b4ad9e;
@@ -24,10 +32,51 @@
   /* display: flex; - cтавить елементи в рядок */
   /* width = ширина */
   width: 906px;
-  display: flex;
+  /* display: flex; */
 }
 
 .list-p {
   /* variable - змінна */
   font-size: var(--text-fontSize);
+  /* font-family: monospace; */
+  /* font-family: "Cormorant Garamond", serif; */
+  font-family: "Bilbo Swash Caps";
+  /* font-weight: 700; */
+
+  /* висота вашого рядка має бути 100px */
+  line-height: 100px;
+}
+
+.list-h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 14px;
+  /*відстань між рядками або висота рядка  
+  line - рядок або лінія
+  height - висота
+  */
+  line-height: 41px;
+  /* колір тексту */
+  color: #fed136;
+}
+
+.list-li-p {
+  /* margin: 1000px; */
+  /* font-family: "Bilbo Swash Caps"; */
+  font-family: "Pixelify Sans";
+}
+
+.text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: rgba(255, 255, 255, 0.8);
 }
