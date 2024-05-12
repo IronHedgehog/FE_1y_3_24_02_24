@@ -80,3 +80,70 @@
 
   color: rgba(255, 255, 255, 0.8);
 }
+
+.li-img {
+  /* внутрішній відступ  */
+  /* загальний запис відступу в усі сторони відбувається за годиниковою стрілкою */
+  /* ЗАГАЛЬНА */
+  /* padding: 200px 40px 210px 20px; */
+
+  /* Якщо використано усього два значення то за ВЕРХ НИЗ відповідає перше число за ЛІВО ПРАВО друге */
+  /* padding: 0 200px; */
+  /* На всі сторони */
+  /* padding: 200px; */
+
+  /* внутрішній відступ зверху */
+  /* padding-top: 200px; */
+  /* внутрішній відступ знизу */
+  /* padding-bottom: 210px; */
+  /* внутрішній відступ ліво */
+  /* padding-left: 20px; */
+  /* внутрішній відступ право */
+  /* padding-right: 40px; */
+
+  /* Відʼємні падінги не працюють */
+  /* padding: -2000000px; */
+}
+
+.background {
+  background-color: goldenrod;
+  padding: 200px 0;
+}
+
+.list-li {
+  /* width - ширина */
+
+  /* ширина кордону */
+  /* border-width: 5px; */
+  /* стиль кордону */
+  /* border-style: solid; */
+  /*border-color - колір кордону  */
+  /* border-color: #fed136; */
+
+  /* ширина  border-style border-color */
+  border: 1px inset red;
+}
+
+/* not - окрім  */
+/* :last-child - останній */
+.list-li:not(:last-child) {
+  /* margin: 200px; */
+
+  /* margin-left: 30px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-top: 110px; */
+  width: 1200px;
+
+  /* Дає ширину і висоту тільки контенту */
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+
+  padding: 50px;
+  /* Робить так,щоб всі елементи зникли з сторінки*/
+  /* display: none; */
+  /*  */
+  /* display: block; */
+
+  margin: 110px 50px 100px 30px;
+}
