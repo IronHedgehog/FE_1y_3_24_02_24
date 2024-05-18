@@ -1,190 +1,23 @@
-/* 626262 B4AD9E 7d7d7d 03a9f4 FFFFFF */
-
-* {
-  /* Зовнішній відступ або відступ від обʼєкту */
-  margin: 0;
-  /* Внутрішній відступ */
-  padding: 0;
-  /* кордони */
-  border: 0;
-  /* box-sizing - розраховує поведінку елемента  -  border-box(Обовʼязково)*/
-  box-sizing: border-box;
-}
-
-a {
-  /*  text-decoration:none - дозволяє прибрати підкреслювання */
-  text-decoration: none;
-}
-
-ul,
-ol {
-  /* декоративне маркування буде прибрано */
-  list-style: none;
-}
-
-/* змінна - це частина оперативної памʼяті компʼютера яка є зарезервованою під ваші потреби(колір) */
-/* root - корінь */
-
-@font-face {
-  font-family: "Bilbo Swash Caps";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(./fonts/bilbo/BilboSwashCaps-Regular.ttf) format("ttf");
-}
-
-:root {
-  /* щоб створити змінну ми маємо записати --назву:значення */
-  --text-color: #b4ad9e;
-
-  --heading-color: #626262;
-
-  --accent-color: #03a9f4;
-
-  --text-fontSize: 30px;
-
-  --happy: yellow;
-}
-
-.p {
-  color: var(--accent-color);
-}
-
-.main-list {
-  /* display: flex; - cтавить елементи в рядок */
-  /* width = ширина */
-  width: 906px;
-  /* display: flex; */
-}
-
-.list-p {
-  /* variable - змінна */
-  font-size: var(--text-fontSize);
-  /* font-family: monospace; */
-  /* font-family: "Cormorant Garamond", serif; */
-  font-family: "Bilbo Swash Caps";
-  /* font-weight: 700; */
-
-  /* висота вашого рядка має бути 100px */
-  line-height: 100px;
-}
-
-.list-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-
-  font-size: 14px;
-  /*відстань між рядками або висота рядка  
-  line - рядок або лінія
-  height - висота
-  */
-  line-height: 41px;
-  /* колір тексту */
-  color: #fed136;
-}
-
-.list-li-p {
-  /* margin: 1000px; */
-  /* font-family: "Bilbo Swash Caps"; */
-  font-family: "Pixelify Sans";
-}
-
-.text {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.li-img {
-  /* внутрішній відступ  */
-  /* загальний запис відступу в усі сторони відбувається за годиниковою стрілкою */
-  /* ЗАГАЛЬНА */
-  /* padding: 200px 40px 210px 20px; */
-
-  /* Якщо використано усього два значення то за ВЕРХ НИЗ відповідає перше число за ЛІВО ПРАВО друге */
-  /* padding: 0 200px; */
-  /* На всі сторони */
-  /* padding: 200px; */
-
-  /* внутрішній відступ зверху */
-  /* padding-top: 200px; */
-  /* внутрішній відступ знизу */
-  /* padding-bottom: 210px; */
-  /* внутрішній відступ ліво */
-  /* padding-left: 20px; */
-  /* внутрішній відступ право */
-  /* padding-right: 40px; */
-
-  /* Відʼємні падінги не працюють */
-  /* padding: -2000000px; */
-}
-
-.background {
-  background-color: goldenrod;
-  padding: 200px 0;
-}
-
-.list-li {
-  /* width - ширина */
-
-  /* ширина кордону */
-  /* border-width: 5px; */
-  /* стиль кордону */
-  /* border-style: solid; */
-  /*border-color - колір кордону  */
-  /* border-color: #fed136; */
-
-  /* ширина  border-style border-color */
-  border: 1px inset red;
-}
-
-/* not - окрім  */
-/* :last-child - останній */
-.list-li:not(:last-child) {
-  /* margin: 200px; */
-
-  /* margin-left: 30px;
-  margin-bottom: 100px;
-  margin-right: 50px;
-  margin-top: 110px; */
-  width: 1200px;
-
-  /* Дає ширину і висоту тільки контенту */
-  /* box-sizing: content-box; */
-  box-sizing: border-box;
-
-  padding: 50px;
-  /* Робить так,щоб всі елементи зникли з сторінки*/
-  /* display: none; */
-  /*  */
-  /* display: block; */
-
-  margin: 110px 50px 100px 30px;
-}
-
-.div {
+.container {
   /* ширина */
-  width: 350px;
-  /* height -висота */
-  height: 220px;
-  /*padding - внутрішній відступ,загальна властивість записується за годинниковою стрілкою (починаючи з 12)   */
+  width: 480px;
+  /* margin: має два значення- перше з них відповідає за верх низ, друге за ліво право. */
+  /* auto - значення розраховується автоматично браузером таким чином,щоб відступ з обох сторін був однаковим */
+  /* margin: 0 auto; - вирівнювання контенту посередені */
+  margin: 0 auto;
+  /* внутрішній відступ зверху знизу 0, зліва зправа по 15  */
+  padding: 0 15px;
+}
 
-  /* padding-left: ;
-  padding-right: ;
-  padding-bottom: ;
-  padding-top: ; */
+/* .container {
+  width: 1200px;
+  центрує
+  margin: 0 auto;
+  padding: 0 15px;
+} */
 
-  padding: 15px 10px 20px 10px;
-  margin-bottom: 30px;
-
-  border: 2px dashed red;
-  background-color: green;
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
