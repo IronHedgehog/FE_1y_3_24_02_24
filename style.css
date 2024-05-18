@@ -1,5 +1,27 @@
 /* 626262 B4AD9E 7d7d7d 03a9f4 FFFFFF */
 
+* {
+  /* Зовнішній відступ або відступ від обʼєкту */
+  margin: 0;
+  /* Внутрішній відступ */
+  padding: 0;
+  /* кордони */
+  border: 0;
+  /* box-sizing - розраховує поведінку елемента  -  border-box(Обовʼязково)*/
+  box-sizing: border-box;
+}
+
+a {
+  /*  text-decoration:none - дозволяє прибрати підкреслювання */
+  text-decoration: none;
+}
+
+ul,
+ol {
+  /* декоративне маркування буде прибрано */
+  list-style: none;
+}
+
 /* змінна - це частина оперативної памʼяті компʼютера яка є зарезервованою під ваші потреби(колір) */
 /* root - корінь */
 
@@ -146,4 +168,23 @@
   /* display: block; */
 
   margin: 110px 50px 100px 30px;
+}
+
+.div {
+  /* ширина */
+  width: 350px;
+  /* height -висота */
+  height: 220px;
+  /*padding - внутрішній відступ,загальна властивість записується за годинниковою стрілкою (починаючи з 12)   */
+
+  /* padding-left: ;
+  padding-right: ;
+  padding-bottom: ;
+  padding-top: ; */
+
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 30px;
+
+  border: 2px dashed red;
+  background-color: green;
 }
