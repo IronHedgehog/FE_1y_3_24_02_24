@@ -1,23 +1,36 @@
-.container {
-  /* ширина */
-  width: 480px;
-  /* margin: має два значення- перше з них відповідає за верх низ, друге за ліво право. */
-  /* auto - значення розраховується автоматично браузером таким чином,щоб відступ з обох сторін був однаковим */
-  /* margin: 0 auto; - вирівнювання контенту посередені */
-  margin: 0 auto;
-  /* внутрішній відступ зверху знизу 0, зліва зправа по 15  */
-  padding: 0 15px;
+.list {
+  display: flex;
+  /* flex-напрямок */
+  /* column - стандартне положення елементів у стовбчик */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row; - за замовчуванням  */
+  /* flex-direction: row; */
+  /*   flex-direction: row-reverse; (перевернутий рядок) */
+  flex-direction: row-reverse;
 }
 
-/* .container {
-  width: 1200px;
-  центрує
-  margin: 0 auto;
-  padding: 0 15px;
-} */
+.list-item {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
 
-.container {
-  width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* .list-item - звернення до класу який є десь в HTML */
+/* :not() - не */
+/*:last-child - остання дитина   */
+.list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.div {
+  display: flex;
+}
+
+.first {
+  background-color: blue;
+}
+
+.last {
+  background-color: yellow;
 }
