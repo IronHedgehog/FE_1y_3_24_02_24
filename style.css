@@ -18,9 +18,11 @@ body {
 }
 
 .container {
-  width: 1200px;
+  /* контент утримує у певній ширині та не дозволяє йому розширюватись далі */
+  width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  /*  margin: 0 auto;  - контент центрує */
 }
 
 .header {
