@@ -9,6 +9,11 @@
   padding: 0 15px;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 /* .container {
   width: 1200px;
   центрує
@@ -20,4 +25,23 @@
   width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+header {
+  background-color: blue;
+}
+
+.section {
+  width: 100%;
+  height: 500px;
+  background-color: yellow;
+}
+.section-heading {
+  text-align: center;
+}
+
+.img-list {
+  display: flex;
+  /* вирівнювати елементи по ширині */
+  justify-content: space-between;
 }
