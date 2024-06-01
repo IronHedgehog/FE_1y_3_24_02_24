@@ -1,5 +1,6 @@
 .list {
   display: flex;
+  height: 100vh;
   /* flex-напрямок */
   /* column - стандартне положення елементів у стовбчик */
   /* flex-direction: column; */
@@ -7,20 +8,66 @@
   /* flex-direction: row; - за замовчуванням  */
   /* flex-direction: row; */
   /*   flex-direction: row-reverse; (перевернутий рядок) */
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
+  /* justify-content: center; - центрує наші елементи по ширині  */
+  /* justify-content: center; */
+  /*  justify-content: space-between; - дозволяє створити рівні відступи між елементи та розподілити увесь вільний простір */
+  /* justify-content: space-between; */
+  /* align-items: center; - вирівнює по висоті  */
+  /* align-items: baseline; */
+  /* justify-content; */
+  /* align-items:- властивість яка дозволяє вирівнювати по висоті */
+  justify-content: center;
+  align-items: center;
 }
 
 .list-item {
-  width: 200px;
-  height: 200px;
+  /*border-radius - дозволяє закруглювати кути  */
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid red;
+
+  /* width: 200px;  - ширина 200px */
+  /* width: 200px; */
+  /* height: 200px; - висота 200px */
+  /* height: 200px; */
+
   background-color: black;
+}
+.list-heading {
+  /* сімейство шрифтів   */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  /*font-size - розмір шрифта  */
+  font-size: 16px;
+  /* висота рядка */
+  line-height: 19px;
+  /* Вирівнювання тексту по ширині */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 
 /* .list-item - звернення до класу який є десь в HTML */
 /* :not() - не */
 /*:last-child - остання дитина   */
 .list-item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .div {
@@ -33,4 +80,13 @@
 
 .last {
   background-color: yellow;
+}
+
+.text-container {
+  /* Margin - завжди прозорий */
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #ffffff;
 }
