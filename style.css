@@ -1,5 +1,14 @@
+/* .list = <ul class="list"> */
+
 .list {
+  /*display: flex; 
+  
+  justify-content: center;
+  align-items: center;*/
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /*  height: 100vh; - дозволяє розтягнути висоту елементу на всю сторінку */
   height: 100vh;
   /* flex-напрямок */
   /* column - стандартне положення елементів у стовбчик */
