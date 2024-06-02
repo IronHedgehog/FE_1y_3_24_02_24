@@ -1,0 +1,135 @@
+/* Якщо кожен елемент списку має власитвість ордер з значенням відмінним від 0 то ми можемо з вами розтавляти елементи за тим порядком який нам захочется */
+
+/*order - за замовчуваням 0  */
+/* якщо квадратику кажуть ордер 1 то він зміщується в кінець списку */
+/*  якщо квадратику кажуть ордер -1 то він зміщується на початок списку*/
+.first {
+  order: 1;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.last {
+  width: 200px;
+  height: 200px;
+  order: -1;
+  background-color: yellow;
+}
+
+.q {
+  order: -2;
+}
+.w {
+  order: 5;
+}
+.e {
+  order: 4;
+}
+
+/* FLEX-GROW */
+
+.container {
+  max-width: 1000px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  /* flex-basis - теж саме ,що width для флекс елементів */
+  /* для flex елементів  flex-basis - буде переписуваит width */
+  flex-basis: 200px;
+}
+
+.content {
+  background-color: blue;
+  /* flex-grow: 1 - дозволяє займати вільний простір  */
+  flex-grow: 1;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.flex-item {
+  /* ширина= flex-basis = width для flex елементів */
+  flex-basis: 300px;
+  /* height: 200px; */
+  background-color: greenyellow;
+  border: 2px dashed red;
+  /* flex-shrink: 1; */
+}
+/* flex-shrink дозволяє елементу стискатися та визначити швидкість з якою елемент має стискатися , чим більше число тим швидше стискається */
+.firstt {
+  flex-shrink: 20;
+  /* Вирівнюванння по висоті для окремого елемента */
+  align-self: stretch;
+
+  text-align: center;
+}
+
+/* align-self - індивідуально для елементу визначаєте де він буде знаходитись по висоті */
+.second {
+  align-self: flex-start;
+}
+
+.third {
+  align-self: flex-end;
+}
+
+.div1 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  flex: 2 1 300px;
+}
+
+.div2 {
+  /* flex-shrink: 1;
+  flex-grow: 2;
+  flex-basis: 500px; */
+  flex: 2 1 500px;
+
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex: 1 2 300px;
+  background-color: yellow;
+}
+
+.div-container {
+  max-width: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* GRID */
+
+.grid {
+  height: 100vh;
+  display: grid;
+  /*grid-template-columns: - відвповідає за кількість колонок  */
+  grid-template-columns: repeat(3, 400px);
+  /*   /*grid-template-rows: - відвповідає за кількість рядків  */
+  grid-template-rows: repeat(3, 200px);
+  /*  grid-column-gap - відступ між колонками */
+  grid-column-gap: 30px;
+  /*  grid-row-gap - відступ між рядками */
+  grid-row-gap: 30px;
+}
+
+.grid-item {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
