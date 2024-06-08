@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Фонова заливка для кращої видимості */
+}
+
+.item {
+  height: 100px;
+  /* flex-frow - дозволяє контролювати розширення елементів */
+  flex-grow: 1;
+  /*font-weight - жирність  */
+  font-weight: 600;
+  /*font-size- розмір */
+  font-size: 30px;
+  background-color: red;
+  padding: 50px;
+}
+
+.holder {
+  display: flex;
+  /* flex-wrap - перенос контенту */
+  flex-wrap: wrap;
+  text-align: center;
+  border: 3px solid black;
+  border-top-right-radius: 29px;
+  border-top-left-radius: 29px;
+}
+
+.item:nth-child(1) {
+  background-color: red;
+  /* flex-basis: 50%; */
+  /* 50% - простору батьківського елементу */
+  width: 50%;
+  /* order - змінює порядок,якщо мінусове значення елемент стає на початок рядка а якщо додатнє то в кінець */
+  order: -3;
+  /*  */
+  border-top-left-radius: 25px;
+
+  /* border-radius: ; */
+}
+.item:nth-child(2) {
+  background-color: cornflowerblue;
+}
+
+.item:nth-child(3) {
+  background-color: blueviolet;
+  order: -1;
+}
+
+.item:nth-child(4) {
+  background-color: green;
+}
+
+.item:nth-child(5) {
+  background-color: orange;
+  /* order - 1 = посатвити елемент в початок рядка */
+  order: -2;
+  width: 50%;
+  border-top-right-radius: 25px;
+  /* flex-basis: 50%; */
+}
