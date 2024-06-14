@@ -1,32 +1,19 @@
-/* * - універсальний селектор - дозволяє обрати всі елементи на сторінці -  */
 * {
-  /* Зовнішній відступ або відступ від обʼєкту */
   margin: 0;
-  /* Внутрішній відступ */
   padding: 0;
-  /* кордони */
   border: 0;
-  /* box-sizing - розраховує поведінку елемента  -  border-box(Обовʼязково)*/
   box-sizing: border-box;
 }
-
-a {
-  /*  text-decoration:none - дозволяє прибрати підкреслювання */
-  text-decoration: none;
+img {
+  display: block;
+  /* width: 100%; */
+  height: auto;
 }
-
 ul,
 ol {
-  /* декоративне маркування буде прибрано */
   list-style: none;
 }
 
-.list-li-p {
-  margin: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+a {
+  text-decoration: none;
 }
