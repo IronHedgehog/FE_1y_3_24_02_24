@@ -1,45 +1,46 @@
-.about {
-  /* gap: ;  - відстань між flex або grid елементами*/
-  /* margin - зовнішній відступ(відстум між елементеми) */
-  /* padding: ; - внутрішній відступ -  */
+.left {
+  /* 200px */
+  /* width = ширина */
 
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: aqua;
+  /* % - залежна велечина, залежить від розміру батьківського елементу */
+  /* width: 20%; */
+  width: 50%;
+  height: 200px;
+  background-color: brown;
+  font-size: 30px;
 }
 
-/* Ключова задача контейнеру - це вирівнювання контенту по центру екрану користувача */
-.container {
-  width: 1200px; /* width 1170 + padding-left: 15px; + padding-right: 15px; = 1200px */
-  /* margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto; */
-  margin: 0 auto; /* 
-  0 = margin-top: 0;
-  margin-bottom: 0;  
-  auto = margin-left: auto;
-  margin-right: auto;
-  */
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  padding: 0 15px;
-  /* padding-top: 0;
-  padding-bottom: 0; */
-  /*  padding-top: 0;
-  padding-bottom: 0; = 0;
-   padding-left: 15px;
-  padding-right: 15px = 15;
-  */
+.right {
+  width: 50%;
+  /* width: 80%; */
+  height: 200px;
+  background-color: chartreuse;
 }
 
-.about-list {
-  height: 100vh;
+.section {
+  width: 100%;
   display: flex;
+}
 
-  justify-content: center; /* вирівнювання елементів по ширині */
-  /* flex-wrap: ; */
-  flex-direction: row-reverse; /* дозволяє змінити напрям елементів в рядок */
-  flex-direction: column; /* дозволяє змінити напрям елементів в колонку */
-  align-items: center; /* вирівнювання елементів по висоті */
+.left-p {
+  width: 50%;
+  /* em - відносна велечина яка розраховується відносно значення батьківського елементу, множить значення  */
+
+  /* 0.5em; -  10px - половина від значення батьківського елемента*/
+  /* 2em - беремо велечину батьківського елемента та множимо її на 2 -  20 * 2  = 40*/
+  font-size: 1em;
+}
+
+html {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.right-p {
+  /* Якщо говоримо за font-size за замовчуванням значення 16px */
+
+  /* rem - дивиться на значення тегу html а саме на значення fonr-size  */
+  width: 50%;
+  font-size: 2rem;
+  margin-left: 2.2rem;
 }
