@@ -85,3 +85,25 @@ html {
   /* 1em = 10px */
   padding-top: 0.5em;
 }
+
+/* кахут */
+/* Псевдоелементи before after пригадати selection first-line first-letter */
+
+/* Загальна властивість бекграунд  */
+/* background: url(./bird.jpg) center / cover no-repeat; */
+
+/*  Нова тема: Контентні та декоративні зображення*/
+
+.right-p::after {
+  content: "";
+
+  display: block;
+  width: 270px;
+  height: 120px;
+
+  background-color: green;
+  background-image: url(./cat.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
