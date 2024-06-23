@@ -86,18 +86,54 @@ html {
   padding-top: 0.5em;
 }
 
-/* кахут */
 /* Псевдоелементи before after пригадати selection first-line first-letter */
 
 /* Загальна властивість бекграунд  */
 /* background: url(./bird.jpg) center / cover no-repeat; */
 
+/* кахут */
+
 /*  Нова тема: Контентні та декоративні зображення*/
 
+/* :: - За допомогою псевдоелементів можна класно робити декоративні елементи */
+
+/* ::before - ::after - рядкові елементи  */
+.right-p::before {
+  /* content - content це обовʼязкова властивість без якої наш after або before взагалі ніколи не відмалюються */
+  content: "";
+  /*  display: block; - робить елемент блочним,щоб ми могли дати йому ширину */
+  display: block;
+  /* Ширина */
+  width: 200px;
+  /* Висота */
+  height: 200px;
+  /* треба записати її до всіх інших бекрграунд властивостей які ви ще плануєте використати */
+  /* спочатку посилання на зображення потім позиція цього зображення ПОТІМ /  після слешу пишемо розміри і в кінці визначаємо скільки елемент буде повторюватись та чи буде він повтоюватись взагалі  */
+  /* backgroud-image: url(./bird.jpg)*/
+  /* backround-positin: center */
+  /* background-size: 100px 100px */
+  /* background-repeat: repeat-y */
+  background: url(./bird.jpg) center / 100px 100px no-repeat;
+  /*  background-image:  - дозволяє додадти зображення заднього фону */
+  /* background-image: url(./bird.jpg); */
+  /*background-size - дозволяє змінити розмір вашого зображення заднього фону  */
+
+  /* background-position: center;
+
+  background-size: 100px 100px;
+
+  background-repeat: no-repeat; */
+
+  /* background: url(./bird.jpg) center / cover no-repeat; */
+  background-color: cadetblue;
+}
+
 .right-p::after {
+  /* content - content це обовʼязкова властивість без якої наш after або before взагалі ніколи не відмалюються */
   content: "";
 
   display: block;
+
   width: 270px;
   height: 120px;
 
@@ -106,4 +142,26 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.right-p:hover::after {
+  /* rotate - прокрутка елемента */
+  /* 360deg - 360 градусів */
+  rotate: 360deg;
+  /* transition - невеличка анімація */
+  transition: all 0.5s ease;
+}
+
+.section-img {
+  background: #ba8b02; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #181818,
+    #ba8b02
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #181818,
+    #ba8b02
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
