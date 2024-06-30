@@ -43,6 +43,14 @@ body {
 
 .advantages {
   background-color: blueviolet;
+  background-image: url(./background.webp);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    236deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgba(32, 172, 25, 1) 40%,
+    rgba(103, 79, 13, 1) 61%
+  );
   padding: 94px 0;
 }
 
@@ -61,8 +69,13 @@ body {
 
 .list-item {
   width: 300px;
-  background-color: #ffffff;
+  /* rgba - red, green, blue, alpha- прозорість */
+  background-color: rgba(50, 100, 100, 1);
   text-align: center;
+  /* OPACITY - ПРОЗОРІСТЬ */
+
+  /* opacity: 0.5; */
+
   /* background-color: orange; */
 }
 /* даємо відступи усім лішкам окрім останньої */
