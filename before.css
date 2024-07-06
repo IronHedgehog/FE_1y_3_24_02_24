@@ -45,13 +45,29 @@ body {
   background-color: blueviolet;
   background-image: url(./background.webp);
   background: rgb(2, 0, 36);
+  background: rgb(18, 75, 113);
+
+  /* linear-gradient() - Ми бажаємо створити лінійний градієн, градієнт з точним напрямком */
   background: linear-gradient(
-    236deg,
-    rgba(2, 0, 36, 1) 20%,
-    rgba(32, 172, 25, 1) 40%,
-    rgba(103, 79, 13, 1) 61%
+    /* 236 градусів  - Напрям за яким має розвиватись наш градієнт  Напрямок градієнту*/
+      /* Вказати напрямок - to right, to left ,to top, to bottom */ to top right,
+    rgba(18, 75, 113, 1) 12%,
+    yellow 60%
   );
-  padding: 94px 0;
+  /* background: rgb(55, 11, 11); */
+  /*radial-gradient - колір переливається з середини кола до країв  */
+  /* background: radial-gradient(
+    circle,
+    rgba(55, 11, 11, 1) 8%,
+    rgba(185, 31, 31, 1) 31%,
+    rgba(3, 27, 85, 1) 40%,
+    rgba(85, 26, 154, 1) 56%,
+    rgba(132, 8, 199, 1) 70%,
+    rgba(255, 0, 137, 1) 74%,
+    rgba(103, 13, 59, 1) 94%
+  ); */
+  padding: 97px 0;
+  /* color: aliceblue; */
 }
 
 .container {
@@ -60,6 +76,12 @@ body {
   margin-right: auto; */
   margin: 0 auto;
   padding: 0 15px;
+
+  top: 1782px;
+
+  -webkit-box-shadow: 12px 13px 55px 3px rgba(21, 5, 138, 1);
+  -moz-box-shadow: 12px 13px 55px 3px rgba(21, 5, 138, 1);
+  box-shadow: 12px 13px 55px 3px rgba(21, 5, 138, 1);
 }
 .list {
   display: flex;
@@ -116,4 +138,16 @@ body {
   letter-spacing: 0.03em;
 
   /* color: #ffffff; */
+}
+
+.qwe {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  /*  text-shadow: ; - для тексту */
+  text-shadow: 9px 10px 1px rgb(17, 0, 255);
+  /*  box-shadow: ; - для  тіні елемент у  */
+  -webkit-box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
+  box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
 }
