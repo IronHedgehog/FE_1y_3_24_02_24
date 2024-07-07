@@ -148,6 +148,33 @@ body {
   text-shadow: 9px 10px 1px rgb(17, 0, 255);
   /*  box-shadow: ; - для  тіні елемент у  */
   -webkit-box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 53px -4px 21px -12px rgba(0, 0, 0, 1);
   box-shadow: 53px -4px 21px -12px rgba(0, 0, 0, 1);
+}
+
+.containerr {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  padding: 0 15px;
+
+  -webkit-box-shadow: inset 20px 21px 114px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 20px 21px 114px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 20px 21px 114px 4px rgba(0, 0, 0, 0.75);
+}
+
+.lorem-text {
+  padding: 40px;
+  width: 400px;
+  height: 400px;
+
+  /* перший запис(inset) - внутрішня тінь якщо потрібна зовнішня, скіпаєм цей параметр */
+
+  /* blur - розмиття */
+  /* spread - розширення тіні */
+  -webkit-box-shadow: inset -4px -4px 0px 22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -4px -4px 0px 22px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -4px -4px 0px 22px rgba(0, 0, 0, 0.75);
+  background-color: blue;
 }
