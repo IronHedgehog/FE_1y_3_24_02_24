@@ -12,6 +12,28 @@
       <li class="li"><img class="img" src="./group.png" alt="" /></li>
       <li class="li"><img class="img" src="./group.jpg" alt="" /></li>
       <li class="li"><img class="img" src="./img.webp" alt="" /></li>
+      <!-- <li class="li"><img class="img rabbit" src="./svg.svg" alt="" /></li> -->
     </ul>
+
+    <!-- svg>use - комбінація працює з спрайтами -->
+    <!--./symbol-defs.svg - шлях до файлу symbols-defs.svg  -->
+    <!--# - селектор id -->
+    <!-- icon-diagram - id іконки яку ми хочемо вставити(це id можна дізнатись у файлику symbol-defs.svg ) -->
+
+    <!-- щоб стилювати SVG - ми маємо дати клас саме тегу svg -->
+    <svg class="diagram">
+      <use href="./symbol-defs.svg#icon-diagram"></use>
+    </svg>
+    <!-- SVG за допомогою тегів  -->
+
+    <svg
+      width="200"
+      height="200"
+      xmlns="http://www.w3.org/2000/svg"
+      style="outline: 1px solid black"
+    >
+      <!-- fill - властивість яка впливає на колір вашої SVG -->
+      <circle r="50" cx="50%" cy="50%" fill="green"></circle>
+    </svg>
   </body>
 </html>
