@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./fonts.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -26,9 +29,16 @@
     </svg>
     <!-- SVG за допомогою тегів  -->
     <!-- svg use - ця пара дозволяє втсановлювати svg графіку яку ми викачали з інтернуту(symbols-defs.svg)(спрайт) -->
-    <svg>
-      <use href="./symbol-defs.svg#icon-astronaut"></use>
-    </svg>
+    <a href="">
+      <svg class="astronaut">
+        <use href="./symbol-defs.svg#icon-astronaut"></use>
+      </svg>
+    </a>
+    <!-- Алгоритм дій для того щоб стилювати SVG -->
+    <!-- 1) Дати клас тегу svg  -->
+    <!-- 2) Перевіряєте щоу вас підключений css файл до html  -->
+    <!-- 3) В css звертаємось до класу який ви дали тегу svg  -->
+    <!-- 4)  в цій css властивості працюємо (fill,stroke,width,height) -->
 
     <svg
       width="200"
@@ -39,5 +49,47 @@
       <!-- fill - властивість яка впливає на колір вашої SVG -->
       <circle r="50" cx="50%" cy="50%" fill="green"></circle>
     </svg>
+
+    <p class="p">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum hic
+      expedita possimus molestiae asperiores maiores! Vitae enim voluptates
+      ipsum id quod magni quasi, voluptatum similique, beatae nulla quam quidem
+      recusandae.
+    </p>
+
+    <!-- скачати іконки  -->
+    <!-- оптимізувати іконки  -->
+    <!-- закинута на icomoon іконки  -->
+    <!-- скачати з icomoon наш іконочний шрифт   -->
+    <!-- Перекинути нам у проект одну папку(fonts) та один файл(style.css який варто переіменувати бо скоріш за все у вас style.css вже є) -->
+    <!-- файлик css підключити до html -->
+    <!-- застосовуйте ваш шрифт за прикладом нище -->
+
+    <ul class="social">
+      <li class="social-item">
+        <a href="">
+          <i class="petro icon-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="">
+          <i class="petro icon-facebook"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="">
+          <i class="petro icon-X"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="">
+          <i class="petro icon-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <script
+      src="https://kit.fontawesome.com/ecf131a3d2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
