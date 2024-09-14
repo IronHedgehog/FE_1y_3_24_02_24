@@ -3,93 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./fonts.css" />
     <link rel="stylesheet" href="styles.css" />
-
     <title>Document</title>
   </head>
   <body>
-    <ul class="ul">
-      <li class="li"><img class="img" src="./group.svg" alt="" /></li>
-      <li class="li"><img class="img" src="./group.png" alt="" /></li>
-      <li class="li"><img class="img" src="./group.jpg" alt="" /></li>
-      <li class="li"><img class="img" src="./img.webp" alt="" /></li>
-      <!-- <li class="li"><img class="img rabbit" src="./svg.svg" alt="" /></li> -->
-    </ul>
-
-    <!-- svg>use - комбінація працює з спрайтами -->
-    <!--./symbol-defs.svg - шлях до файлу symbols-defs.svg  -->
-    <!--# - селектор id -->
-    <!-- icon-diagram - id іконки яку ми хочемо вставити(це id можна дізнатись у файлику symbol-defs.svg ) -->
-
-    <!-- щоб стилювати SVG - ми маємо дати клас саме тегу svg -->
-    <svg class="diagram">
-      <use href="./symbol-defs.svg#icon-diagram"></use>
-    </svg>
-    <!-- SVG за допомогою тегів  -->
-    <!-- svg use - ця пара дозволяє втсановлювати svg графіку яку ми викачали з інтернуту(symbols-defs.svg)(спрайт) -->
-    <a href="">
-      <svg class="astronaut">
-        <use href="./symbol-defs.svg#icon-astronaut"></use>
-      </svg>
-    </a>
-    <!-- Алгоритм дій для того щоб стилювати SVG -->
-    <!-- 1) Дати клас тегу svg  -->
-    <!-- 2) Перевіряєте щоу вас підключений css файл до html  -->
-    <!-- 3) В css звертаємось до класу який ви дали тегу svg  -->
-    <!-- 4)  в цій css властивості працюємо (fill,stroke,width,height) -->
-
-    <svg
-      width="200"
-      height="200"
-      xmlns="http://www.w3.org/2000/svg"
-      style="outline: 1px solid black"
-    >
-      <!-- fill - властивість яка впливає на колір вашої SVG -->
-      <circle r="50" cx="50%" cy="50%" fill="green"></circle>
-    </svg>
-
-    <p class="p">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum hic
-      expedita possimus molestiae asperiores maiores! Vitae enim voluptates
-      ipsum id quod magni quasi, voluptatum similique, beatae nulla quam quidem
-      recusandae.
-    </p>
-
-    <!-- скачати іконки  -->
-    <!-- оптимізувати іконки  -->
-    <!-- закинута на icomoon іконки  -->
-    <!-- скачати з icomoon наш іконочний шрифт   -->
-    <!-- Перекинути нам у проект одну папку(fonts) та один файл(style.css який варто переіменувати бо скоріш за все у вас style.css вже є) -->
-    <!-- файлик css підключити до html -->
-    <!-- застосовуйте ваш шрифт за прикладом нище -->
-
-    <ul class="social">
-      <li class="social-item">
-        <a href="">
-          <i class="petro icon-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="">
-          <i class="petro icon-facebook"></i>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="">
-          <i class="petro icon-X"></i>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="">
-          <i class="petro icon-instagram"></i>
-        </a>
-      </li>
-    </ul>
-    <script
-      src="https://kit.fontawesome.com/ecf131a3d2.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="div1"></div>
+    <div class="div2">asdasd</div>
+    <div class="div3"></div>
   </body>
 </html>

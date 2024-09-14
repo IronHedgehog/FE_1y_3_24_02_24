@@ -1,72 +1,36 @@
-ul {
-  list-style: none;
-}
+/* Вивчити властивість position,z-index */
 
-.ul {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-
-  justify-content: center;
-}
-
-.img {
-  width: 45px;
-  height: 42px;
-}
-
-/* .rabbit {
-  width: 1000px;
-  height: 1000px;
-  background-color: red;
-  color: green;
-} */
-
-.diagram {
+/* position - позиціонування елементу відносно сторінки або батьківського елементу */
+/* position: static; - значення за замовчуванням */
+/* position: fixed;  */
+/* position: absolute;  */
+/* position: relative;  */
+/* relative - магніт */
+/* position: relative; - залишає елемент який ми стилюємо на своєму місці */
+/* Ми можемо його пересувати за допомгою властивостей left,top,right,bottom */
+.div1 {
   width: 200px;
   height: 200px;
-  /* fill - колір svg зображення */
-  fill: red;
-  /* fill-opacity: - прозорість svg- кольору*/
-  fill-opacity: 0.5;
-
-  /* stroke-width: 10px; */
-  /* stroke-opacity: ; */
+  background-color: aqua;
+  position: static;
 }
 
-.astronaut {
-  /* fill - змінює колір ліній */
-  fill: blue;
-  /* прозорість ліній */
-  fill-opacity: 0.5;
-  /* Дає доступ до кордонів вашої svg - рідкий в використанні */
-  stroke-opacity: 0.5;
-  stroke: yellow;
+/* bottom - відступ знизу */
+/* top - відступ зверху */
+/* властивості top -right,left , bottom - доступні тілки коли є position окрема від static */
+.div2 {
   width: 200px;
   height: 200px;
+  background-color: brown;
+  /* position: relative; */
+  top: 200px;
 }
 
-.p {
-  /* жирність тексту: жирний */
-  font-weight: bold;
-  /*font-style - стиль надрукування тексту (Звичайний, похилий)  */
-  font-style: normal;
-  /* Розмір тексту */
-  font-size: 24px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.petro {
-  /* color: СТИЛЮЄ КОЛІР ТЕКСТУ  */
-  color: red;
-  font-size: 20px;
-}
-
-.petro:hover {
-  color: blanchedalmond;
-  font-size: 40px;
+.div3 {
+  width: 200px;
+  height: 200px;
+  background-color: darkviolet;
+  position: absolute;
+  top: 2220px;
+  left: 0;
 }
