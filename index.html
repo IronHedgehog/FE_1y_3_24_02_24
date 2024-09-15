@@ -7,8 +7,54 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="div1"></div>
-    <div class="div2">asdasd</div>
-    <div class="div3"></div>
+    <!--boxes - є батькіським для інших дівів в середені  -->
+    <!-- <div class="boxes">
+      <div class="div1"></div>
+      <div class="div2">asdasd</div>
+      <div class="div3"></div>
+    </div> -->
+    <header></header>
+    <main>
+      <section class="img-section">
+        <!-- container є батьківським елементом для елементів з якими ми працюємо -->
+        <!-- якщо ви хочете накласти елементи один на одного то вам потрібно обгорнути їх у дівчик і цьому дівчику обгортці дати postion:relative -->
+        <div class="container">
+          <div class="position-wrapper">
+            <img src="./man.jpg" alt="" />
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="">
+                  <svg class="social-icons">
+                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <svg class="social-icons">
+                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <svg class="social-icons">
+                    <use href="./symbol-defs.svg#icon-X"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <svg class="social-icons">
+                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
