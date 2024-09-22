@@ -1,12 +1,18 @@
-const passwordInput = document.getElementById("passwordInput");
-const toggleButton = document.getElementById("toggleButton");
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+  console.log(refs.modal);
+  console.log(refs.openModalBtn);
+  console.log(refs.closeModalBtn);
 
-toggleButton.addEventListener("click", function () {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    toggleButton.textContent = "Приховати пароль";
-  } else {
-    passwordInput.type = "password";
-    toggleButton.textContent = "Показати пароль";
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
   }
-});
+})();
