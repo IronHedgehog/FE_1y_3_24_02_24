@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam
+      quaerat, magnam animi necessitatibus vel ex perferendis, maiores non
+      quidem accusantium rem et doloribus debitis doloremque corrupti dicta
+      deleniti labore consectetur,<span data-modal-open class="word">
+        exercitationem
+        <span class="desc is-hidden">
+          <span class="p">Опис слова</span>
+        </span>
+      </span>
+      asperiores! Numquam ab molestias unde magnam! Iusto vero nihil
+      necessitatibus ab nisi, atque in explicabo pariatur? Soluta accusamus in
+      quos eius quasi iusto, sequi adipisci beatae porro quo blanditiis modi
+      nobis explicabo ipsa et quis! Minus reiciendis laudantium dignissimos,
+      commodi tempore sapiente voluptatum repellendus! Nostrum quos fuga
+      consectetur adipisci, deleniti a eum nisi sunt quisquam possimus
+      temporibus similique soluta natus reprehenderit ipsum neque architecto
+      animi quae velit nemo.
+    </p>
+
     <form>
       <!--type="email" - дає перевірку від браузера на те що користувач ввів   -->
       <input type="email" required />
@@ -15,5 +36,12 @@
       <input type="range" />
       <button type="submit">Відправити</button>
     </form>
+    <div class="backdrop is-hidden">
+      <div data-modal class="modal">
+        <button data-modal-close>X</button>
+        <p>Опис слова</p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>

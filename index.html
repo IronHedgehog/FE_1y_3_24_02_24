@@ -11,9 +11,20 @@
     <footer>
       <form>
         <!--type="email" - дає перевірку від браузера на те що користувач ввів   -->
-        <input type="email" />
+        <label>
+          E-mail
+          <!-- За допомогою регулярних виразів ми можемо робити додаткову перевірку -->
+          <input
+            type="email"
+            pattern="/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm"
+          />
+        </label>
+        <label
+          >password
+          <input type="password" />
+        </label>
         <input type="text" />
-        <input type="text" />
+        <button type="submit">asd</button>
       </form>
     </footer>
     <div data-modal class="backdrop is-hidden">

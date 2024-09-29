@@ -33,3 +33,45 @@
   transform: translate(-50%, -50%);
   background-color: white;
 }
+
+.word {
+  position: relative;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.desc {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.p {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  left: 0px;
+  opacity: 0;
+  z-index: 5;
+}
+
+.desc.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.word:hover .desc.is-hidden {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.word:hover .p {
+  opacity: 1;
+  pointer-events: all;
+}
