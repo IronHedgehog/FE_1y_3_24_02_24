@@ -5,73 +5,37 @@
   box-sizing: border-box;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
+/* css переходи відпрацьовуються тільки після певної події тригеру(:hover,:active) */
+
+.body {
+  padding: 500px;
 }
 
-.backdrop.is-hidden {
-  /* display - dалстивість яку неомжливо або дуже складно анімувати */
-  /* display: none; */
-  /* pointer-events: none; - забороняє всі активності мишки з цим елементом */
-  pointer-events: none;
-  opacity: 0;
-}
-
-.modal {
-  width: 528px;
-  height: 581px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-}
-
-.word {
-  position: relative;
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.desc {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 20px;
-  left: 0;
+.box {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  transform: scale(1);
+  /* це єдина властивість без якої css-перехід не буде працювати взагалі */
+  /* Властивість яку ви будете анімувати  */
+  transition-property: background-color, transform;
+  /* transition-duration - тривалість анімаціїї (вказується в MS)*/
+  /* в 1с - 1000мс */
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.03, 1.8, 0, -0.96);
+  /* transition-delay: 1s; */
+}
+
+.box:hover {
+  background-color: darkorange;
+  transform: scale(2);
+}
+
+.white {
   color: white;
-  z-index: 1;
-}
-
-.p {
-  position: absolute;
-  color: white;
-  font-size: 24px;
-  left: 0px;
-  opacity: 0;
-  z-index: 5;
-}
-
-.desc.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.word:hover .desc.is-hidden {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.word:hover .p {
-  opacity: 1;
-  pointer-events: all;
+  text-align: center;
 }
