@@ -7,8 +7,11 @@
 
 /* css переходи відпрацьовуються тільки після певної події тригеру(:hover,:active) */
 
-.body {
-  padding: 500px;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
@@ -20,7 +23,7 @@
   justify-content: center;
   background-color: black;
   transform: scale(1);
-  /* це єдина властивість без якої css-перехід не буде працювати взагалі */
+  /* це одна з властивостей без якої css-перехід не буде працювати взагалі */
   /* Властивість яку ви будете анімувати  */
   transition-property: background-color, transform;
   /* transition-duration - тривалість анімаціїї (вказується в MS)*/
@@ -32,7 +35,15 @@
 
 .box:hover {
   background-color: darkorange;
-  transform: scale(2);
+  /* scale , має два параметри збільшення по ширині та висоті */
+  /* Якщо ми вказуємотільки один параметр то цей параметр застосовується і до ширини і до висоти */
+  /* мінусові значення перевертають верх ногами елемент */
+  /* значення за замовчуванням 1 */
+  /* transform: scale(-2, -3); */
+
+  /* transform: scale(2); */
+  /* rotate - крутити елемент */
+  transform: rotate(250deg) scale(2);
 }
 
 .white {
