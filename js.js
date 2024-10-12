@@ -10,7 +10,6 @@ function getRandomColor() {
 function changeBackgroundColor() {
   const newColor = getRandomColor();
   document.body.style.backgroundColor = newColor;
-  document.getElementById("currentColor").textContent = newColor;
 }
 
 changeBackgroundColor();
