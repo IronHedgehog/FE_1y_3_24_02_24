@@ -14,39 +14,61 @@ body {
   justify-content: center;
 }
 
-.box {
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  transform: scale(1);
-  /* це одна з властивостей без якої css-перехід не буде працювати взагалі */
-  /* Властивість яку ви будете анімувати  */
-  transition-property: background-color, transform;
-  /* transition-duration - тривалість анімаціїї (вказується в MS)*/
-  /* в 1с - 1000мс */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.list-item {
+  width: 44px;
+  height: 44px;
+}
+
+.list-item:hover {
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.social-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  transition: transform 0.3s linear;
+}
+
+/* .list-item:hover  - звернення до лішки при наведенні */
+/* .list-item:hover .social-icon -  при ховері на лішку звертаємось до елементу з класом .social-icon */
+.list-item:hover .social-icon {
+  transform: scale(1.2);
+  fill: white;
+}
+
+/* .social-icon:hover {
+  fill: white;
+} */
+
+.text-link {
+  font-size: 30px;
+
+  transition-property: transform, font-size;
   transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0.03, 1.8, 0, -0.96);
-  /* transition-delay: 1s; */
+  transition-timing-function: cubic-bezier(0.14, 1.9, 0.84, -0.96);
+  transition-delay: 1s;
 }
 
-.box:hover {
-  background-color: darkorange;
-  /* scale , має два параметри збільшення по ширині та висоті */
-  /* Якщо ми вказуємотільки один параметр то цей параметр застосовується і до ширини і до висоти */
-  /* мінусові значення перевертають верх ногами елемент */
-  /* значення за замовчуванням 1 */
-  /* transform: scale(-2, -3); */
+/* css-переходи активуються тільки під час якихось ефектів (hover,active,focus) */
 
-  /* transform: scale(2); */
-  /* rotate - крутити елемент */
-  transform: rotate(250deg) scale(2);
-}
-
-.white {
-  color: white;
-  text-align: center;
+.text-link:hover {
+  transform: scale(2);
+  font-size: 50px;
 }
