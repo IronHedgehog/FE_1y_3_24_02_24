@@ -60,15 +60,104 @@ ul {
 .text-link {
   font-size: 30px;
 
-  transition-property: transform, font-size;
+  /* transition-property: transform, font-size;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.14, 1.9, 0.84, -0.96);
-  transition-delay: 1s;
+  transition-delay: 1s; */
+  /* Записувати властивості можна в будь-якому порядку */
+  /* transition: transform, font-size, 1s, cubic-bezier(0.14, 1.9, 0.84, -0.96); */
 }
 
 /* css-переходи активуються тільки під час якихось ефектів (hover,active,focus) */
 
 .text-link:hover {
   transform: scale(2);
+  /* deg - градуси */
+  transform: skew(35deg, 20deg);
+  transform: translate(50%, 50%);
+  transform: rotate(320deg);
   font-size: 50px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  transform: skew(10deg, 5deg);
+  background-color: red;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  /* display - dалстивість яку неомжливо або дуже складно анімувати */
+  /* display: none; */
+  /* pointer-events: none; - забороняє всі активності мишки з цим елементом */
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) !important;
+  background-color: white;
+  /* transition-property: all;
+  transition-duration: 1s; */
+  /* transition-timing-function: cubic-bezier(1, 0, 0, 1); */
+  /* transition-delay: 1s; */
+}
+
+.word {
+  position: relative;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.desc {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.p {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  left: 0px;
+  opacity: 0;
+  z-index: 5;
+}
+
+.desc.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.word:hover .desc.is-hidden {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.word:hover .p {
+  opacity: 1;
+  pointer-events: all;
 }

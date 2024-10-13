@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
@@ -17,5 +21,20 @@
       </li>
     </ul>
     <a class="text-link" href=""> see more </a>
+
+    <p class="animate__animated animate__flipInX">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea
+      doloremque corrupti, molestias assumenda dolore? Cumque ab incidunt nulla,
+      rem voluptate molestiae voluptas sunt consequuntur neque, ratione unde
+      quibusdam assumenda.
+    </p>
+    <button data-modal-open>Open modal</button>
+    <!-- <div class="box"></div> -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close">X</button>
+      </div>
+    </div>
+    <script src="./js.js"></script>
   </body>
 </html>
