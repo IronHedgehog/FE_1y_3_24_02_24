@@ -12,7 +12,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
+  /* opacity: 1; */
   transition: opacity 758ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -21,7 +21,8 @@
   /* display: none; */
   /* pointer-events: none; - забороняє всі активності мишки з цим елементом */
   pointer-events: none;
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
 
 .modal {
