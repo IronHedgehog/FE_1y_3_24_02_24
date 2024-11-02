@@ -1,0 +1,17 @@
+#one {
+  background-color: black;
+  height: 400px;
+  width: 100%;
+}
+
+#two {
+  background-color: wheat;
+  height: 100px;
+  width: 100%;
+}
+
+#three {
+  background-color: aqua;
+  height: 500px;
+  width: 100%;
+}
