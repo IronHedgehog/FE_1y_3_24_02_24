@@ -1,5 +1,24 @@
 #two {
-  background-color: wheat;
+  background-color: $second-color;
   height: 100px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateBox 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+
+@keyframes rotateBox {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
 }

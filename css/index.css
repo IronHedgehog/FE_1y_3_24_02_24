@@ -5,13 +5,43 @@
 }
 
 #two {
-  background-color: wheat;
+  background-color: orange;
   height: 100px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateBox 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
 }
 
+@keyframes rotateBox {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
 #three {
   background-color: aqua;
   height: 500px;
   width: 100%;
+}
+
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: translate(50%, 50%);
+  transition: transform 1s cubic-bezier(0.21, 2.03, 0.83, -0.96);
+}
+
+.div:hover {
+  transform: translate(0%, 0%);
 }

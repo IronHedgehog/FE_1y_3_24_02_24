@@ -3,3 +3,15 @@
   height: 500px;
   width: 100%;
 }
+
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: $second-color;
+  transform: translate(50%, 50%);
+  transition: transform 1s cubic-bezier(0.21, 2.03, 0.83, -0.96);
+}
+
+.div:hover {
+  transform: translate(0%, 0%);
+}
