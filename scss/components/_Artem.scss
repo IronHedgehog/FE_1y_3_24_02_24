@@ -1,0 +1,30 @@
+// .header-nav {
+//   color: #ff0000;
+//   .nav-ul {
+//     color: green;
+//     .nav-li {
+//       color: blue;
+//       .nav-link {
+//         color: orange;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+.nav-link {
+  color: orange;
+  text-decoration: none;
+  //   & = назві селектору у якому ви його використовуєте
+  //   & = .nav-link
+  &:hover {
+    color: red;
+  }
+  //   &::after {
+  //     content: "";
+  //   }
+}
+
+// .nav-link:hover {
+//   color: red;
+// }

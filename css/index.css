@@ -4,6 +4,14 @@
   width: 100%;
 }
 
+.nav-link {
+  color: orange;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: red;
+}
+
 #two {
   background-color: orange;
   height: 100px;
