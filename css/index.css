@@ -12,6 +12,29 @@
   color: red;
 }
 
+.button1, .button4, .button3, .button2 {
+  width: 100px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: red;
+  color: green;
+}
+
+.button2 {
+  background-color: aqua;
+  color: red;
+}
+
+.button3 {
+  background-color: hsl(0, 100%, 27%);
+  color: white;
+}
+
+.button4 {
+  background-color: indianred;
+  color: green;
+}
+
 #two {
   background-color: orange;
   height: 100px;

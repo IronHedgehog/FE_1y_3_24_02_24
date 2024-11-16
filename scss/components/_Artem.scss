@@ -28,3 +28,29 @@
 // .nav-link:hover {
 //   color: red;
 // }
+
+.button1 {
+  width: 100px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: red;
+  color: green;
+}
+
+.button2 {
+  @extend .button1;
+  background-color: aqua;
+  color: red;
+}
+
+.button3 {
+  @extend .button1;
+  background-color: hsl(0, 100%, 27%);
+  color: white;
+}
+
+.button4 {
+  @extend .button1;
+  background-color: indianred;
+  color: green;
+}
