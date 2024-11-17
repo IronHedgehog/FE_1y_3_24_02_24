@@ -1,0 +1,33 @@
+// За допомогою міксинів можемо скоротити код який повторюється та якого багато
+
+@mixin flexbox($display, $justifyContent, $alignItems) {
+  display: $display; // block, flex, inline
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-color: $color;
+  border-style: $style;
+}
+
+@mixin font(
+  $font-family,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing,
+  $color
+) {
+  /* Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. */
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  /* or 171% */
+  letter-spacing: $letter-spacing;
+
+  color: $color;
+}

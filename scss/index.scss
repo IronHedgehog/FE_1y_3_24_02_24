@@ -1,4 +1,6 @@
-@import "./basic/vars";
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
 @import "./components/Nazar.scss";
 @import "./components/Artem.scss";

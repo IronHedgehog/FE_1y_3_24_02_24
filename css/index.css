@@ -1,3 +1,12 @@
+@charset "UTF-8";
+.button4, .button3, .button2, .button1 {
+  width: 100px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: red;
+  color: green;
+}
+
 #one {
   background-color: black;
   height: 400px;
@@ -10,14 +19,6 @@
 }
 .nav-link:hover {
   color: red;
-}
-
-.button1, .button4, .button3, .button2 {
-  width: 100px;
-  height: 40px;
-  padding: 10px 20px;
-  background-color: red;
-  color: green;
 }
 
 .button2 {
@@ -33,6 +34,38 @@
 .button4 {
   background-color: indianred;
   color: green;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+}
+
+.nav-ul > li {
+  margin-right: 30px;
+  border-width: 10px;
+  border-color: yellow;
+  border-style: dashed;
+  /* Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  /* or 171% */
+  letter-spacing: 0.05em;
+  color: red;
+}
+
+.nav-ul {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 #two {

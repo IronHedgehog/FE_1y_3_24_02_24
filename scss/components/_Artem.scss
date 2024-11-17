@@ -30,27 +30,44 @@
 // }
 
 .button1 {
-  width: 100px;
-  height: 40px;
-  padding: 10px 20px;
-  background-color: red;
-  color: green;
+  @extend %button;
 }
 
 .button2 {
-  @extend .button1;
+  @extend %button;
   background-color: aqua;
   color: red;
 }
 
 .button3 {
-  @extend .button1;
+  @extend %button;
   background-color: hsl(0, 100%, 27%);
   color: white;
 }
 
 .button4 {
-  @extend .button1;
+  @extend %button;
   background-color: indianred;
   color: green;
+}
+
+// @mixin flexbox(параметри) {
+
+// }
+
+.nav-ul {
+  @include flexbox(flex, center, center);
+  list-style: none;
+  // border: 1px solid red;
+  @include border(1px, solid, red);
+}
+
+.nav-ul > li {
+  margin-right: 30px;
+  @include border(10px, dashed, yellow);
+  @include font("Roboto", 400, 14px, 27px, 0.05em, red);
+}
+
+.nav-ul {
+  @include flexbox(block, center, center);
 }
