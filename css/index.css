@@ -173,3 +173,16 @@
     width: 1100px;
   }
 }
+
+.test {
+  width: 50vw;
+  height: 20vh;
+  background-color: red;
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
