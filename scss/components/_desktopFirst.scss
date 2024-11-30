@@ -1,0 +1,29 @@
+// DESKTOP FIRST
+// За замовчуванням великі екрани або PC монітори
+.div11 {
+  width: 1000px;
+  height: 1000px;
+  background-color: orange;
+
+  //   Достатньо великі екрани (планшети - ноути)
+  @media screen and (max-width: 1199px) {
+    width: 700px;
+    height: 700px;
+    background-color: aqua;
+  }
+  @media screen and (max-width: 991px) {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+  }
+  @media screen and (max-width: 767px) {
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+  }
+  @media screen and (max-width: 575px) {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+}
